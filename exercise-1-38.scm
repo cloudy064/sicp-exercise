@@ -7,4 +7,4 @@
 		  (r (remainder i 3)))
 	  (cond ((= r 2) (* 2 (+ q 1)))
 			(else 1))))
-  (cont-frac n d k))
+  (+ 2 (cont-frac n d k)))
