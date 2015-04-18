@@ -1,0 +1,10 @@
+(load exercise-1-38.scm)
+
+(define (guess-e k)
+  (define (n i) 1.0)
+  (define (d i)
+	(let ((q (quotient i 3))
+		  (r (remainder i 3)))
+	  (cond ((= r 2) (* 2 (+ q 1)))
+			(else 1))))
+  (cont-frac n d k))
