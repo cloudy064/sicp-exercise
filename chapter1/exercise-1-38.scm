@@ -1,4 +1,4 @@
-(load exercise-1-38.scm)
+(load "exercise-1-37.scm")
 
 (define (guess-e k)
   (define (n i) 1.0)
