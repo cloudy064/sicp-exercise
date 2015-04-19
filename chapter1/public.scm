@@ -26,3 +26,6 @@
 
 (define (fixed-point-of-transform g transform guess)
   (fixed-point (transform g) guess))
+
+(define (average-three a b c)
+  (/ (+ a b c) 3))
