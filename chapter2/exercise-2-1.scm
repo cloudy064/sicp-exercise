@@ -42,8 +42,11 @@
 (define (make-rat-sign n d)
   (define is-d-negative (< d 0))
   (let ((g (gcd n d))
-		(rn (if is-d-negative (-n) n))
-		(rd (if is-d-negative (-d) d)))
+		;;There should be a blank space between n and -.
+		;;Or -n will be seemed as a variable.
+		(rn (if is-d-negative (- n) n))
+		(rd (if is-d-negative (- d) d)))
 	(cons (/ rn g) (/ rd g))))
 
+;; default-make-rat is the current constructor of rat
 (define default-make-rat simple-make-rat)
