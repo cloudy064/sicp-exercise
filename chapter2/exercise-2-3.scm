@@ -1,5 +1,6 @@
 (load "exercise-2-2.scm")
 
+;;Maybe, you should make sure that two segments are perpendicular.
 (define (make-rectangle-1 segment-w segment-h)
   (cons segment-w segment-h))
 
@@ -14,6 +15,7 @@
 
 (define (rectangle-height r) (segment-length (cdr r)))
 
+;;Below are the functions for rectangle.
 (define (rectangle-area r)
   (* (rectangle-width r) (rectangle-height r)))
 
