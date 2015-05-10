@@ -1,5 +1,10 @@
 (load "exercise-2-7.scm")
 
+;; There is a bug with this answer.
+;; When lx<0 and ux>=0 and ly<0 and uy>=0, we have to apply multipling for four time.
+;; Maybe there is a better answer to it, and if you know it, please email to me.
+;; My email address is princejackchang@gmail.com.
+
 (define (mul-interval x y)
   (let ((lx (lower-bound x))
 		(ux (upper-bound x))
