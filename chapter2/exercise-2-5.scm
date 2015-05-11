@@ -9,7 +9,11 @@
 ;;  (x (lambda (a b) (expt 3 b))))
 
 ;; But, according to the description of the exercise, you must implement three functions only in arithmetic operations.
-;; Just think about it. 2 and 3 are relatively prime numbers. So, provided a number which can be represented by 2a3b, we can call it m, you can get (car m) by dividing m by 2 until the remainder is not zero, and the count you apply dividing operation is just the number, (car m)
+;; Just think about it. 2 and 3 are relatively prime numbers. 
+;; So, provided a number which can be represented by 2a3b, we can call it m, 
+;; you can get (car m) by dividing m by 2 until the remainder is not zero, 
+;; and the count you apply dividing operation is just the number, (car m).
+;;
 ;; (cdr m) is the same.
 
 (define (cons a b)
