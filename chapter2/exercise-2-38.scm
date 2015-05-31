@@ -52,5 +52,6 @@
 ;;
 ;; So, in order to get the same result for fold-left and fold-right,
 ;; the operation op should meet the following requirements:
-;; we should make sure that the results of (op a b) and (op b a) are the same.
+;; we should make sure that the operator follows the associative law,
+;; namely the results of (op a (op b c)) and (op (op a b) c) are the same.
 ;; For example, + and *
