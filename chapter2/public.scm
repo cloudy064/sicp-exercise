@@ -4,4 +4,4 @@
 	  (cons low (enumerate-interval (+ low 1) high))))
 
 (define (flatmap proc seq)
-  (accumulate append () (map proc seq)))
+  (fold-right append () (map proc seq)))
